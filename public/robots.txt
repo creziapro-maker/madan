@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+Disallow: /admin
+Disallow: /api
+Disallow: /private
+
+# Crawl delay and request rate
+Crawl-delay: 1
+
+# Sitemaps
+Sitemap: https://madanrajendra.com/sitemap.xml
