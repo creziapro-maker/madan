@@ -2,7 +2,7 @@
 
 import Link from "next/link"
 import { motion } from "framer-motion"
-import { Github, Linkedin, Mail, ExternalLink } from "lucide-react"
+import { Github, Linkedin, Mail, ExternalLink, MessageSquare } from "lucide-react"
 
 export function Footer() {
   const currentYear = new Date().getFullYear()
@@ -11,6 +11,7 @@ export function Footer() {
     { icon: Github, href: "https://github.com/Madancse013", label: "GitHub" },
     { icon: Linkedin, href: "https://www.linkedin.com/in/madan-r-a55867282", label: "LinkedIn" },
     { icon: Mail, href: "mailto:madancse.gcem@gmail.com", label: "Email" },
+    { icon: MessageSquare, href: "https://wa.me/919535318620", label: "WhatsApp" },
   ]
 
   const footerLinks = {

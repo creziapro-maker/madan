@@ -5,7 +5,7 @@ import { useForm } from "react-hook-form"
 import { zodResolver } from "@hookform/resolvers/zod"
 import { z } from "zod"
 import { cn } from "@/lib/utils"
-import { Send, Mail, Linkedin, Github, Clock, CheckCircle, Phone, AlertCircle } from "lucide-react"
+import { Send, Mail, Linkedin, Github, Clock, CheckCircle, Phone, AlertCircle, MessageSquare } from "lucide-react"
 import { sendContactEmail } from "@/app/actions/send-email"
 
 const contactFormSchema = z.object({
@@ -100,15 +100,17 @@ export function ContactForm() {
               </a>
 
               <a
-                href="tel:+919535318620"
+                href="https://wa.me/919535318620"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="group flex items-center gap-4 p-4 rounded-xl glass border border-transparent hover:border-primary/30 transition-all duration-300"
-                aria-label="Call Madan Rajendra"
+                aria-label="Contact Madan Rajendra on WhatsApp"
               >
                 <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
-                  <Phone className="w-5 h-5 text-primary" aria-hidden="true" />
+                  <MessageSquare className="w-5 h-5 text-primary" aria-hidden="true" />
                 </div>
                 <div>
-                  <p className="text-sm text-muted-foreground">Phone Number</p>
+                  <p className="text-sm text-muted-foreground">WhatsApp & Phone</p>
                   <p className="text-foreground font-medium">+91 9535318620</p>
                 </div>
               </a>
