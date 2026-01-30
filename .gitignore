@@ -1,18 +1,44 @@
-node_modules
-.next
-out
+# dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# testing
+coverage/
+
+# next.js
+.next/
+out/
+.turbopack
+
+# production
+build/
+dist
+
+# misc
+.DS_Store
+*.pem
+*~
+
+# debug
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# local env files
 .env
 .env.local
 .env.*.local
-*.log
-.DS_Store
-.idea
-.vscode
+
+# vercel
+.vercel
+
+# IDE
+.vscode/
+.idea/
 *.swp
 *.swo
-*~
-dist
-build
+
+# Other
 pnpm-lock.yaml
-.turbopack
-node_modules

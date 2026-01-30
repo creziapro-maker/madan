@@ -1,0 +1,423 @@
+
+> madan-portfolio@1.0.0 dev
+> next dev
+
+ ⚠ Port 3000 is in use, trying 3001 instead.
+ ⚠ Port 3001 is in use, trying 3002 instead.
+ ⚠ Port 3002 is in use, trying 3003 instead.
+  ▲ Next.js 14.2.4
+  - Local:        http://localhost:3003
+
+ ✓ Starting...
+ ✓ Ready in 2.1s
+ ○ Compiling / ...
+Error: Can't resolve 'tw-animate-css' in 'c:\Project\madan Rajendra\madan-portfolio\src\app'
+    at finishWithoutResolve (c:\Project\madan Rajendra\madan-portfolio\node_modules\enhanced-resolve\lib\Resolver.js:565:18)
+    at c:\Project\madan Rajendra\madan-portfolio\node_modules\enhanced-resolve\lib\Resolver.js:657:14
+    at c:\Project\madan Rajendra\madan-portfolio\node_modules\enhanced-resolve\lib\Resolver.js:718:5
+    at eval (eval at create (c:\Project\madan Rajendra\madan-portfolio\node_modules\next\dist\compiled\webpack\bundle5.js:13:28858), <anonymous>:15:1)
+    at c:\Project\madan Rajendra\madan-portfolio\node_modules\enhanced-resolve\lib\Resolver.js:718:5
+    at eval (eval at create (c:\Project\madan Rajendra\madan-portfolio\node_modules\next\dist\compiled\webpack\bundle5.js:13:28858), <anonymous>:27:1)
+    at c:\Project\madan Rajendra\madan-portfolio\node_modules\enhanced-resolve\lib\DescriptionFilePlugin.js:89:43
+    at c:\Project\madan Rajendra\madan-portfolio\node_modules\enhanced-resolve\lib\Resolver.js:718:5
+    at eval (eval at create (c:\Project\madan Rajendra\madan-portfolio\node_modules\next\dist\compiled\webpack\bundle5.js:13:28858), <anonymous>:15:1)
+    at c:\Project\madan Rajendra\madan-portfolio\node_modules\enhanced-resolve\lib\Resolver.js:718:5
+    at eval (eval at create (c:\Project\madan Rajendra\madan-portfolio\node_modules\next\dist\compiled\webpack\bundle5.js:13:28858), <anonymous>:15:1)
+    at c:\Project\madan Rajendra\madan-portfolio\node_modules\enhanced-resolve\lib\Resolver.js:718:5
+    at eval (eval at create (c:\Project\madan Rajendra\madan-portfolio\node_modules\next\dist\compiled\webpack\bundle5.js:13:28858), <anonymous>:42:1)
+    at c:\Project\madan Rajendra\madan-portfolio\node_modules\enhanced-resolve\lib\ConditionalPlugin.js:53:42
+    at c:\Project\madan Rajendra\madan-portfolio\node_modules\enhanced-resolve\lib\Resolver.js:718:5
+    at eval (eval at create (c:\Project\madan Rajendra\madan-portfolio\node_modules\next\dist\compiled\webpack\bundle5.js:13:28858), <anonymous>:16:1)
+    at c:\Project\madan Rajendra\madan-portfolio\node_modules\enhanced-resolve\lib\forEachBail.js:39:13
+    at c:\Project\madan Rajendra\madan-portfolio\node_modules\enhanced-resolve\lib\ModulesInHierarchicalDirectoriesPlugin.js:83:16
+    at SyncAsyncFileSystemDecorator.stat (c:\Project\madan Rajendra\madan-portfolio\node_modules\enhanced-resolve\lib\SyncAsyncFileSystemDecorator.js:66:34)
+    at c:\Project\madan Rajendra\madan-portfolio\node_modules\enhanced-resolve\lib\ModulesInHierarchicalDirectoriesPlugin.js:57:11
+    at next (c:\Project\madan Rajendra\madan-portfolio\node_modules\enhanced-resolve\lib\forEachBail.js:35:3)
+    at forEachBail (c:\Project\madan Rajendra\madan-portfolio\node_modules\enhanced-resolve\lib\forEachBail.js:49:9)
+    at c:\Project\madan Rajendra\madan-portfolio\node_modules\enhanced-resolve\lib\ModulesInHierarchicalDirectoriesPlugin.js:49:6
+    at _next0 (eval at create (c:\Project\madan Rajendra\madan-portfolio\node_modules\next\dist\compiled\webpack\bundle5.js:13:28858), <anonymous>:8:1)
+    at eval (eval at create (c:\Project\madan Rajendra\madan-portfolio\node_modules\next\dist\compiled\webpack\bundle5.js:13:28858), <anonymous>:30:1)
+    at c:\Project\madan Rajendra\madan-portfolio\node_modules\enhanced-resolve\lib\SelfReferencePlugin.js:48:31
+    at Hook.eval [as callAsync] (eval at create (c:\Project\madan Rajendra\madan-portfolio\node_modules\next\dist\compiled\webpack\bundle5.js:13:28858), <anonymous>:22:1)
+    at Resolver.doResolve (c:\Project\madan Rajendra\madan-portfolio\node_modules\enhanced-resolve\lib\Resolver.js:715:16)
+    at c:\Project\madan Rajendra\madan-portfolio\node_modules\enhanced-resolve\lib\ConditionalPlugin.js:42:14
+    at Hook.eval [as callAsync] (eval at create (c:\Project\madan Rajendra\madan-portfolio\node_modules\next\dist\compiled\webpack\bundle5.js:13:28858), <anonymous>:37:1)
+    at Resolver.doResolve (c:\Project\madan Rajendra\madan-portfolio\node_modules\enhanced-resolve\lib\Resolver.js:715:16)
+    at c:\Project\madan Rajendra\madan-portfolio\node_modules\enhanced-resolve\lib\NextPlugin.js:30:14
+    at Hook.eval [as callAsync] (eval at create (c:\Project\madan Rajendra\madan-portfolio\node_modules\next\dist\compiled\webpack\bundle5.js:13:28858), <anonymous>:7:1)
+    at Resolver.doResolve (c:\Project\madan Rajendra\madan-portfolio\node_modules\enhanced-resolve\lib\Resolver.js:715:16)
+    at c:\Project\madan Rajendra\madan-portfolio\node_modules\enhanced-resolve\lib\NextPlugin.js:30:14
+    at Hook.eval [as callAsync] (eval at create (c:\Project\madan Rajendra\madan-portfolio\node_modules\next\dist\compiled\webpack\bundle5.js:13:28858), <anonymous>:7:1)
+    at Resolver.doResolve (c:\Project\madan Rajendra\madan-portfolio\node_modules\enhanced-resolve\lib\Resolver.js:715:16)
+    at c:\Project\madan Rajendra\madan-portfolio\node_modules\enhanced-resolve\lib\DescriptionFilePlugin.js:80:17
+    at c:\Project\madan Rajendra\madan-portfolio\node_modules\enhanced-resolve\lib\DescriptionFileUtils.js:161:24
+    at c:\Project\madan Rajendra\madan-portfolio\node_modules\enhanced-resolve\lib\forEachBail.js:39:13
+    at onJson (c:\Project\madan Rajendra\madan-portfolio\node_modules\enhanced-resolve\lib\DescriptionFileUtils.js:96:6)
+    at c:\Project\madan Rajendra\madan-portfolio\node_modules\enhanced-resolve\lib\DescriptionFileUtils.js:123:7
+    at SyncAsyncFileSystemDecorator.readJson (c:\Project\madan Rajendra\madan-portfolio\node_modules\enhanced-resolve\lib\SyncAsyncFileSystemDecorator.js:204:6)
+    at c:\Project\madan Rajendra\madan-portfolio\node_modules\enhanced-resolve\lib\DescriptionFileUtils.js:104:26
+    at next (c:\Project\madan Rajendra\madan-portfolio\node_modules\enhanced-resolve\lib\forEachBail.js:35:3)
+    at forEachBail (c:\Project\madan Rajendra\madan-portfolio\node_modules\enhanced-resolve\lib\forEachBail.js:49:9)
+    at findDescriptionFile (c:\Project\madan Rajendra\madan-portfolio\node_modules\enhanced-resolve\lib\DescriptionFileUtils.js:70:3)
+    at c:\Project\madan Rajendra\madan-portfolio\node_modules\enhanced-resolve\lib\DescriptionFileUtils.js:167:12
+    at c:\Project\madan Rajendra\madan-portfolio\node_modules\enhanced-resolve\lib\forEachBail.js:39:13
+    at c:\Project\madan Rajendra\madan-portfolio\node_modules\enhanced-resolve\lib\DescriptionFileUtils.js:113:16 {
+  details: "resolve 'tw-animate-css' in 'c:\\Project\\madan Rajendra\\madan-portfolio\\src\\app'\n" +
+    '  Parsed request is a module\n' +
+    '  using description file: c:\\Project\\madan Rajendra\\madan-portfolio\\package.json (relative path: ./src/app)\n' +
+    '    resolve as module\n' +
+    "      c:\\Project\\madan Rajendra\\madan-portfolio\\src\\app\\node_modules doesn't exist or is not a directory\n" +
+    "      c:\\Project\\madan Rajendra\\madan-portfolio\\src\\node_modules doesn't exist or is not a directory\n" +
+    '      looking for modules in c:\\Project\\madan Rajendra\\madan-portfolio\\node_modules\n' +
+    '        single file module\n' +
+    '          using description file: c:\\Project\\madan Rajendra\\madan-portfolio\\package.json (relative path: ./node_modules/tw-animate-css)\n' +
+    '            no extension\n' +
+    "              c:\\Project\\madan Rajendra\\madan-portfolio\\node_modules\\tw-animate-css doesn't exist\n" +
+    '            .css\n' +
+    "              c:\\Project\\madan Rajendra\\madan-portfolio\\node_modules\\tw-animate-css.css doesn't exist\n" +
+    "        c:\\Project\\madan Rajendra\\madan-portfolio\\node_modules\\tw-animate-css doesn't exist\n" +
+    "      c:\\Project\\madan Rajendra\\node_modules doesn't exist or is not a directory\n" +
+    "      c:\\Project\\node_modules doesn't exist or is not a directory\n" +
+    "      c:\\node_modules doesn't exist or is not a directory"
+}
+ ⨯ ./src/app/globals.css:1:1
+Syntax error: tailwindcss: c:\Project\madan Rajendra\madan-portfolio\src\app\globals.css Can't resolve 'tw-animate-css' in 'c:\Project\madan Rajendra\madan-portfolio\src\app'
+
+[1m[31m>[39m[22m[90m 1 | [39m[36m@import[39m [32m"tailwindcss"[39m[33m;[39m
+ [90m   | [39m[1m[31m^[39m[22m
+ [90m 2 | [39m[36m@import[39m [32m"tw-animate-css"[39m[33m;[39m
+ [90m 3 | [39m
+Error: Can't resolve 'tw-animate-css' in 'c:\Project\madan Rajendra\madan-portfolio\src\app'
+    at finishWithoutResolve (c:\Project\madan Rajendra\madan-portfolio\node_modules\enhanced-resolve\lib\Resolver.js:565:18)
+    at c:\Project\madan Rajendra\madan-portfolio\node_modules\enhanced-resolve\lib\Resolver.js:657:14
+    at c:\Project\madan Rajendra\madan-portfolio\node_modules\enhanced-resolve\lib\Resolver.js:718:5
+    at eval (eval at create (c:\Project\madan Rajendra\madan-portfolio\node_modules\next\dist\compiled\webpack\bundle5.js:13:28858), <anonymous>:15:1)
+    at c:\Project\madan Rajendra\madan-portfolio\node_modules\enhanced-resolve\lib\Resolver.js:718:5
+    at eval (eval at create (c:\Project\madan Rajendra\madan-portfolio\node_modules\next\dist\compiled\webpack\bundle5.js:13:28858), <anonymous>:27:1)
+    at c:\Project\madan Rajendra\madan-portfolio\node_modules\enhanced-resolve\lib\DescriptionFilePlugin.js:89:43
+    at c:\Project\madan Rajendra\madan-portfolio\node_modules\enhanced-resolve\lib\Resolver.js:718:5
+    at eval (eval at create (c:\Project\madan Rajendra\madan-portfolio\node_modules\next\dist\compiled\webpack\bundle5.js:13:28858), <anonymous>:15:1)
+    at c:\Project\madan Rajendra\madan-portfolio\node_modules\enhanced-resolve\lib\Resolver.js:718:5
+    at eval (eval at create (c:\Project\madan Rajendra\madan-portfolio\node_modules\next\dist\compiled\webpack\bundle5.js:13:28858), <anonymous>:15:1)
+    at c:\Project\madan Rajendra\madan-portfolio\node_modules\enhanced-resolve\lib\Resolver.js:718:5
+    at eval (eval at create (c:\Project\madan Rajendra\madan-portfolio\node_modules\next\dist\compiled\webpack\bundle5.js:13:28858), <anonymous>:42:1)
+    at c:\Project\madan Rajendra\madan-portfolio\node_modules\enhanced-resolve\lib\ConditionalPlugin.js:53:42
+    at c:\Project\madan Rajendra\madan-portfolio\node_modules\enhanced-resolve\lib\Resolver.js:718:5
+    at eval (eval at create (c:\Project\madan Rajendra\madan-portfolio\node_modules\next\dist\compiled\webpack\bundle5.js:13:28858), <anonymous>:16:1)
+    at c:\Project\madan Rajendra\madan-portfolio\node_modules\enhanced-resolve\lib\forEachBail.js:39:13
+    at c:\Project\madan Rajendra\madan-portfolio\node_modules\enhanced-resolve\lib\ModulesInHierarchicalDirectoriesPlugin.js:83:16
+    at SyncAsyncFileSystemDecorator.stat (c:\Project\madan Rajendra\madan-portfolio\node_modules\enhanced-resolve\lib\SyncAsyncFileSystemDecorator.js:66:34)
+    at c:\Project\madan Rajendra\madan-portfolio\node_modules\enhanced-resolve\lib\ModulesInHierarchicalDirectoriesPlugin.js:57:11
+    at next (c:\Project\madan Rajendra\madan-portfolio\node_modules\enhanced-resolve\lib\forEachBail.js:35:3)
+    at forEachBail (c:\Project\madan Rajendra\madan-portfolio\node_modules\enhanced-resolve\lib\forEachBail.js:49:9)
+    at c:\Project\madan Rajendra\madan-portfolio\node_modules\enhanced-resolve\lib\ModulesInHierarchicalDirectoriesPlugin.js:49:6
+    at _next0 (eval at create (c:\Project\madan Rajendra\madan-portfolio\node_modules\next\dist\compiled\webpack\bundle5.js:13:28858), <anonymous>:8:1)
+    at eval (eval at create (c:\Project\madan Rajendra\madan-portfolio\node_modules\next\dist\compiled\webpack\bundle5.js:13:28858), <anonymous>:30:1)
+    at c:\Project\madan Rajendra\madan-portfolio\node_modules\enhanced-resolve\lib\SelfReferencePlugin.js:48:31
+    at Hook.eval [as callAsync] (eval at create (c:\Project\madan Rajendra\madan-portfolio\node_modules\next\dist\compiled\webpack\bundle5.js:13:28858), <anonymous>:22:1)
+    at Resolver.doResolve (c:\Project\madan Rajendra\madan-portfolio\node_modules\enhanced-resolve\lib\Resolver.js:715:16)
+    at c:\Project\madan Rajendra\madan-portfolio\node_modules\enhanced-resolve\lib\ConditionalPlugin.js:42:14
+    at Hook.eval [as callAsync] (eval at create (c:\Project\madan Rajendra\madan-portfolio\node_modules\next\dist\compiled\webpack\bundle5.js:13:28858), <anonymous>:37:1)
+    at Resolver.doResolve (c:\Project\madan Rajendra\madan-portfolio\node_modules\enhanced-resolve\lib\Resolver.js:715:16)
+    at c:\Project\madan Rajendra\madan-portfolio\node_modules\enhanced-resolve\lib\NextPlugin.js:30:14
+    at Hook.eval [as callAsync] (eval at create (c:\Project\madan Rajendra\madan-portfolio\node_modules\next\dist\compiled\webpack\bundle5.js:13:28858), <anonymous>:7:1)
+    at Resolver.doResolve (c:\Project\madan Rajendra\madan-portfolio\node_modules\enhanced-resolve\lib\Resolver.js:715:16)
+    at c:\Project\madan Rajendra\madan-portfolio\node_modules\enhanced-resolve\lib\NextPlugin.js:30:14
+    at Hook.eval [as callAsync] (eval at create (c:\Project\madan Rajendra\madan-portfolio\node_modules\next\dist\compiled\webpack\bundle5.js:13:28858), <anonymous>:7:1)
+    at Resolver.doResolve (c:\Project\madan Rajendra\madan-portfolio\node_modules\enhanced-resolve\lib\Resolver.js:715:16)
+    at c:\Project\madan Rajendra\madan-portfolio\node_modules\enhanced-resolve\lib\DescriptionFilePlugin.js:80:17
+    at c:\Project\madan Rajendra\madan-portfolio\node_modules\enhanced-resolve\lib\DescriptionFileUtils.js:161:24
+    at c:\Project\madan Rajendra\madan-portfolio\node_modules\enhanced-resolve\lib\forEachBail.js:39:13
+    at onJson (c:\Project\madan Rajendra\madan-portfolio\node_modules\enhanced-resolve\lib\DescriptionFileUtils.js:96:6)
+    at c:\Project\madan Rajendra\madan-portfolio\node_modules\enhanced-resolve\lib\DescriptionFileUtils.js:123:7
+    at SyncAsyncFileSystemDecorator.readJson (c:\Project\madan Rajendra\madan-portfolio\node_modules\enhanced-resolve\lib\SyncAsyncFileSystemDecorator.js:204:6)
+    at c:\Project\madan Rajendra\madan-portfolio\node_modules\enhanced-resolve\lib\DescriptionFileUtils.js:104:26
+    at next (c:\Project\madan Rajendra\madan-portfolio\node_modules\enhanced-resolve\lib\forEachBail.js:35:3)
+    at forEachBail (c:\Project\madan Rajendra\madan-portfolio\node_modules\enhanced-resolve\lib\forEachBail.js:49:9)
+    at findDescriptionFile (c:\Project\madan Rajendra\madan-portfolio\node_modules\enhanced-resolve\lib\DescriptionFileUtils.js:70:3)
+    at c:\Project\madan Rajendra\madan-portfolio\node_modules\enhanced-resolve\lib\DescriptionFileUtils.js:167:12
+    at c:\Project\madan Rajendra\madan-portfolio\node_modules\enhanced-resolve\lib\forEachBail.js:39:13
+    at c:\Project\madan Rajendra\madan-portfolio\node_modules\enhanced-resolve\lib\DescriptionFileUtils.js:113:16 {
+  details: "resolve 'tw-animate-css' in 'c:\\Project\\madan Rajendra\\madan-portfolio\\src\\app'\n" +
+    '  Parsed request is a module\n' +
+    '  using description file: c:\\Project\\madan Rajendra\\madan-portfolio\\package.json (relative path: ./src/app)\n' +
+    '    resolve as module\n' +
+    "      c:\\Project\\madan Rajendra\\madan-portfolio\\src\\app\\node_modules doesn't exist or is not a directory\n" +
+    "      c:\\Project\\madan Rajendra\\madan-portfolio\\src\\node_modules doesn't exist or is not a directory\n" +
+    '      looking for modules in c:\\Project\\madan Rajendra\\madan-portfolio\\node_modules\n' +
+    '        single file module\n' +
+    '          using description file: c:\\Project\\madan Rajendra\\madan-portfolio\\package.json (relative path: ./node_modules/tw-animate-css)\n' +
+    '            no extension\n' +
+    "              c:\\Project\\madan Rajendra\\madan-portfolio\\node_modules\\tw-animate-css doesn't exist\n" +
+    '            .css\n' +
+    "              c:\\Project\\madan Rajendra\\madan-portfolio\\node_modules\\tw-animate-css.css doesn't exist\n" +
+    "        c:\\Project\\madan Rajendra\\madan-portfolio\\node_modules\\tw-animate-css doesn't exist\n" +
+    "      c:\\Project\\madan Rajendra\\node_modules doesn't exist or is not a directory\n" +
+    "      c:\\Project\\node_modules doesn't exist or is not a directory\n" +
+    "      c:\\node_modules doesn't exist or is not a directory"
+}
+<w> [webpack.cache.PackFileCacheStrategy/webpack.FileSystemInfo] Resolving '../../../typescript/lib/typescript' in c:\Project\madan Rajendra\madan-portfolio\node_modules\next\dist\build for build dependencies doesn't lead to expected result 'C:\Project\madan Rajendra\madan-portfolio\node_modules\typescript\lib\typescript.js', but to 'c:\Project\madan Rajendra\madan-portfolio\node_modules\typescript\lib\typescript.js' instead. Resolving dependencies are ignored for this path.
+<w>  at resolve commonjs file ../../../typescript/lib/typescript (expected C:\Project\madan Rajendra\madan-portfolio\node_modules\typescript\lib\typescript.js)
+<w>  at file dependencies c:\Project\madan Rajendra\madan-portfolio\node_modules\next\dist\build\load-jsconfig.js
+<w>  at file c:\Project\madan Rajendra\madan-portfolio\node_modules\next\dist\build\load-jsconfig.js
+<w>  at file dependencies c:\Project\madan Rajendra\madan-portfolio\node_modules\next\dist\build\webpack-config.js
+<w>  at file c:\Project\madan Rajendra\madan-portfolio\node_modules\next\dist\build\webpack-config.js
+<w>  at file dependencies c:\Project\madan Rajendra\madan-portfolio\node_modules\next\dist\build\handle-externals.js
+<w>  at file c:\Project\madan Rajendra\madan-portfolio\node_modules\next\dist\build\handle-externals.js
+<w>  at file dependencies c:\Project\madan Rajendra\madan-portfolio\node_modules\next\dist\build\webpack\loaders\next-swc-loader.js
+<w>  at file c:\Project\madan Rajendra\madan-portfolio\node_modules\next\dist\build\webpack\loaders\next-swc-loader.js
+<w>  at resolve commonjs c:\Project\madan Rajendra\madan-portfolio\node_modules\next\dist\build\webpack\loaders\next-swc-loader.js
+<w> [webpack.cache.PackFileCacheStrategy/webpack.FileSystemInfo] Resolving '../../../typescript/lib/typescript' in c:\Project\madan Rajendra\madan-portfolio\node_modules\next\dist\build for build dependencies doesn't lead to expected result 'C:\Project\madan Rajendra\madan-portfolio\node_modules\typescript\lib\typescript.js', but to 'c:\Project\madan Rajendra\madan-portfolio\node_modules\typescript\lib\typescript.js' instead. Resolving dependencies are ignored for this path.
+<w>  at resolve commonjs file ../../../typescript/lib/typescript (expected C:\Project\madan Rajendra\madan-portfolio\node_modules\typescript\lib\typescript.js)
+<w>  at file dependencies c:\Project\madan Rajendra\madan-portfolio\node_modules\next\dist\build\load-jsconfig.js
+<w>  at file c:\Project\madan Rajendra\madan-portfolio\node_modules\next\dist\build\load-jsconfig.js
+<w>  at file dependencies c:\Project\madan Rajendra\madan-portfolio\node_modules\next\dist\build\webpack-config.js
+<w>  at file c:\Project\madan Rajendra\madan-portfolio\node_modules\next\dist\build\webpack-config.js
+<w>  at file dependencies c:\Project\madan Rajendra\madan-portfolio\node_modules\next\dist\build\webpack\loaders\next-swc-loader.js
+<w>  at file c:\Project\madan Rajendra\madan-portfolio\node_modules\next\dist\build\webpack\loaders\next-swc-loader.js
+<w>  at resolve commonjs c:\Project\madan Rajendra\madan-portfolio\node_modules\next\dist\build\webpack\loaders\next-swc-loader.js
+<w> [webpack.cache.PackFileCacheStrategy/webpack.FileSystemInfo] Resolving '../../../typescript/lib/typescript' in c:\Project\madan Rajendra\madan-portfolio\node_modules\next\dist\build for build dependencies doesn't lead to expected result 'C:\Project\madan Rajendra\madan-portfolio\node_modules\typescript\lib\typescript.js', but to 'c:\Project\madan Rajendra\madan-portfolio\node_modules\typescript\lib\typescript.js' instead. Resolving dependencies are ignored for this path.
+<w>  at resolve commonjs file ../../../typescript/lib/typescript (expected C:\Project\madan Rajendra\madan-portfolio\node_modules\typescript\lib\typescript.js)
+<w>  at file dependencies c:\Project\madan Rajendra\madan-portfolio\node_modules\next\dist\build\load-jsconfig.js
+<w>  at file c:\Project\madan Rajendra\madan-portfolio\node_modules\next\dist\build\load-jsconfig.js
+<w>  at file dependencies c:\Project\madan Rajendra\madan-portfolio\node_modules\next\dist\build\webpack-config.js
+<w>  at file c:\Project\madan Rajendra\madan-portfolio\node_modules\next\dist\build\webpack-config.js
+<w>  at file dependencies c:\Project\madan Rajendra\madan-portfolio\node_modules\next\dist\build\handle-externals.js
+<w>  at file c:\Project\madan Rajendra\madan-portfolio\node_modules\next\dist\build\handle-externals.js
+<w>  at file dependencies c:\Project\madan Rajendra\madan-portfolio\node_modules\next\dist\build\webpack\loaders\next-swc-loader.js
+<w>  at file c:\Project\madan Rajendra\madan-portfolio\node_modules\next\dist\build\webpack\loaders\next-swc-loader.js
+<w>  at resolve commonjs c:\Project\madan Rajendra\madan-portfolio\node_modules\next\dist\build\webpack\loaders\next-swc-loader.js
+<w> [webpack.cache.PackFileCacheStrategy] Skipped not serializable cache item 'Compilation/modules|c:\Project\madan Rajendra\madan-portfolio\node_modules\next\dist\build\webpack\loaders\css-loader\src\index.js??ruleSet[1].rules[13].oneOf[12].use[2]!c:\Project\madan Rajendra\madan-portfolio\node_modules\next\dist\build\webpack\loaders\postcss-loader\src\index.js??ruleSet[1].rules[13].oneOf[12].use[3]!c:\Project\madan Rajendra\madan-portfolio\src\app\globals.css': No serializer registered for PostCSSSyntaxError
+<w> while serializing webpack/lib/cache/PackFileCacheStrategy.PackContentItems -> webpack/lib/NormalModule -> webpack/lib/ModuleBuildError -> PostCSSSyntaxError
+ ⨯ ./src/app/globals.css:1:1
+Syntax error: tailwindcss: c:\Project\madan Rajendra\madan-portfolio\src\app\globals.css Can't resolve 'tw-animate-css' in 'c:\Project\madan Rajendra\madan-portfolio\src\app'
+
+[1m[31m>[39m[22m[90m 1 | [39m[36m@import[39m [32m"tailwindcss"[39m[33m;[39m
+ [90m   | [39m[1m[31m^[39m[22m
+ [90m 2 | [39m[36m@import[39m [32m"tw-animate-css"[39m[33m;[39m
+ [90m 3 | [39m
+ HEAD / 500 in 11572ms
+ ✓ Compiled /_error in 14.7s (924 modules)
+ ✓ Compiled in 1083ms (876 modules)
+ ✓ Compiled in 684ms (876 modules)
+ ✓ Compiled in 574ms (876 modules)
+ ✓ Compiled in 630ms (876 modules)
+ ✓ Compiled in 660ms (876 modules)
+ ✓ Compiled in 692ms (876 modules)
+ ✓ Compiled in 600ms (876 modules)
+ ✓ Compiled in 518ms (876 modules)
+ ✓ Compiled in 786ms (876 modules)
+ ✓ Compiled in 651ms (876 modules)
+ ✓ Compiled in 787ms (876 modules)
+ ✓ Compiled in 596ms (876 modules)
+ ✓ Compiled in 675ms (876 modules)
+ ✓ Compiled in 564ms (876 modules)
+ ✓ Compiled in 597ms (876 modules)
+ ✓ Compiled in 500ms (876 modules)
+ ✓ Compiled in 599ms (876 modules)
+ ✓ Compiled in 606ms (876 modules)
+ ✓ Compiled in 608ms (876 modules)
+ ✓ Compiled in 565ms (876 modules)
+ ✓ Compiled in 655ms (876 modules)
+ ✓ Compiled in 617ms (876 modules)
+ ✓ Compiled in 577ms (876 modules)
+ ✓ Compiled in 562ms (876 modules)
+ ✓ Compiled in 589ms (876 modules)
+ ✓ Compiled in 614ms (876 modules)
+ ✓ Compiled in 588ms (876 modules)
+ ✓ Compiled in 528ms (876 modules)
+ ✓ Compiled in 701ms (876 modules)
+ ✓ Compiled in 592ms (876 modules)
+ ✓ Compiled in 634ms (876 modules)
+ ✓ Compiled in 677ms (876 modules)
+ ✓ Compiled in 615ms (876 modules)
+ ✓ Compiled in 590ms (876 modules)
+ ✓ Compiled in 509ms (876 modules)
+ ✓ Compiled in 513ms (876 modules)
+ ✓ Compiled in 603ms (876 modules)
+ ✓ Compiled in 522ms (876 modules)
+ ✓ Compiled in 631ms (876 modules)
+ ✓ Compiled in 471ms (876 modules)
+ ✓ Compiled in 467ms (876 modules)
+ ✓ Compiled in 607ms (876 modules)
+ ✓ Compiled in 523ms (876 modules)
+ ✓ Compiled in 651ms (876 modules)
+ ✓ Compiled in 611ms (876 modules)
+ ✓ Compiled in 645ms (876 modules)
+ ✓ Compiled in 630ms (876 modules)
+ ✓ Compiled in 628ms (876 modules)
+ ✓ Compiled in 644ms (876 modules)
+ ✓ Compiled in 676ms (876 modules)
+ ✓ Compiled in 598ms (876 modules)
+ ✓ Compiled in 671ms (876 modules)
+ ✓ Compiled in 646ms (876 modules)
+ ✓ Compiled in 606ms (876 modules)
+ ✓ Compiled in 603ms (876 modules)
+ ✓ Compiled in 639ms (876 modules)
+ ✓ Compiled in 616ms (876 modules)
+ ✓ Compiled in 588ms (876 modules)
+ ✓ Compiled in 576ms (876 modules)
+ ✓ Compiled in 601ms (876 modules)
+ ✓ Compiled in 583ms (876 modules)
+ ✓ Compiled in 598ms (876 modules)
+ ✓ Compiled in 589ms (876 modules)
+ ✓ Compiled in 573ms (876 modules)
+ ✓ Compiled in 592ms (876 modules)
+ ✓ Compiled in 588ms (876 modules)
+ ✓ Compiled in 592ms (876 modules)
+ ✓ Compiled in 623ms (876 modules)
+ ✓ Compiled in 631ms (876 modules)
+ ✓ Compiled in 577ms (876 modules)
+ ✓ Compiled in 582ms (876 modules)
+ ✓ Compiled in 569ms (876 modules)
+ ✓ Compiled in 564ms (876 modules)
+ ✓ Compiled in 553ms (876 modules)
+ ✓ Compiled in 549ms (876 modules)
+ ✓ Compiled in 570ms (876 modules)
+ ✓ Compiled in 580ms (876 modules)
+ ✓ Compiled in 457ms (876 modules)
+ ✓ Compiled in 479ms (876 modules)
+ ✓ Compiled in 762ms (876 modules)
+ ✓ Compiled in 615ms (876 modules)
+ ✓ Compiled in 658ms (876 modules)
+ ✓ Compiled in 757ms (876 modules)
+ ✓ Compiled in 566ms (876 modules)
+ ✓ Compiled in 636ms (876 modules)
+ ✓ Compiled in 594ms (876 modules)
+ ✓ Compiled in 641ms (876 modules)
+ ✓ Compiled in 618ms (876 modules)
+ ✓ Compiled in 682ms (876 modules)
+ ✓ Compiled in 623ms (876 modules)
+ ✓ Compiled in 606ms (876 modules)
+ ✓ Compiled in 601ms (876 modules)
+ ✓ Compiled in 600ms (876 modules)
+ ✓ Compiled in 598ms (876 modules)
+ ✓ Compiled in 705ms (876 modules)
+ ✓ Compiled in 622ms (876 modules)
+ ✓ Compiled in 589ms (876 modules)
+ ✓ Compiled in 573ms (876 modules)
+ ✓ Compiled in 577ms (876 modules)
+ ✓ Compiled in 573ms (876 modules)
+ ✓ Compiled in 585ms (876 modules)
+ ✓ Compiled in 556ms (876 modules)
+ ✓ Compiled in 566ms (876 modules)
+ ✓ Compiled in 674ms (876 modules)
+ ✓ Compiled in 618ms (876 modules)
+ ✓ Compiled in 606ms (876 modules)
+ ✓ Compiled in 771ms (876 modules)
+ ✓ Compiled in 655ms (876 modules)
+ ✓ Compiled in 609ms (876 modules)
+ ✓ Compiled in 581ms (876 modules)
+ ✓ Compiled in 574ms (876 modules)
+ ✓ Compiled in 556ms (876 modules)
+ ✓ Compiled in 574ms (876 modules)
+ ✓ Compiled in 548ms (876 modules)
+ ✓ Compiled in 571ms (876 modules)
+ ✓ Compiled in 568ms (876 modules)
+ ✓ Compiled in 565ms (876 modules)
+ ✓ Compiled in 617ms (876 modules)
+ ✓ Compiled in 700ms (876 modules)
+ ✓ Compiled in 675ms (876 modules)
+ ✓ Compiled in 445ms (876 modules)
+ ✓ Compiled in 591ms (876 modules)
+ ✓ Compiled in 568ms (876 modules)
+ ✓ Compiled in 596ms (876 modules)
+ ✓ Compiled in 522ms (876 modules)
+ ✓ Compiled in 507ms (876 modules)
+ ✓ Compiled in 518ms (876 modules)
+ ✓ Compiled in 465ms (876 modules)
+ ✓ Compiled in 534ms (876 modules)
+ ✓ Compiled in 477ms (876 modules)
+ ✓ Compiled in 573ms (876 modules)
+ ✓ Compiled in 563ms (876 modules)
+ ✓ Compiled in 626ms (876 modules)
+ ✓ Compiled in 661ms (876 modules)
+ ✓ Compiled in 529ms (876 modules)
+ ✓ Compiled in 529ms (876 modules)
+ ✓ Compiled in 548ms (876 modules)
+ ✓ Compiled in 571ms (876 modules)
+ ✓ Compiled in 568ms (876 modules)
+ ✓ Compiled in 619ms (876 modules)
+ ✓ Compiled in 566ms (876 modules)
+ ✓ Compiled in 517ms (876 modules)
+ ✓ Compiled in 601ms (876 modules)
+ ✓ Compiled in 750ms (876 modules)
+ ✓ Compiled in 604ms (876 modules)
+ ✓ Compiled in 616ms (876 modules)
+ ✓ Compiled in 554ms (876 modules)
+ ✓ Compiled in 558ms (876 modules)
+ ✓ Compiled in 474ms (876 modules)
+ ✓ Compiled in 494ms (876 modules)
+ ✓ Compiled in 509ms (876 modules)
+ ✓ Compiled in 474ms (876 modules)
+ ✓ Compiled in 624ms (876 modules)
+ ✓ Compiled in 609ms (876 modules)
+ ✓ Compiled in 681ms (876 modules)
+ ✓ Compiled in 717ms (876 modules)
+ ✓ Compiled in 572ms (876 modules)
+ ✓ Compiled in 691ms (876 modules)
+ ✓ Compiled in 690ms (876 modules)
+ ✓ Compiled in 684ms (876 modules)
+ ✓ Compiled in 735ms (876 modules)
+ ✓ Compiled in 773ms (876 modules)
+ ✓ Compiled in 754ms (876 modules)
+ ✓ Compiled in 846ms (876 modules)
+ ✓ Compiled in 627ms (876 modules)
+ ✓ Compiled in 598ms (876 modules)
+ ✓ Compiled in 561ms (876 modules)
+ ✓ Compiled in 612ms (876 modules)
+ ✓ Compiled in 629ms (876 modules)
+ ✓ Compiled in 764ms (876 modules)
+ ✓ Compiled in 741ms (876 modules)
+ ✓ Compiled in 716ms (876 modules)
+ ✓ Compiled in 756ms (876 modules)
+ ✓ Compiled in 697ms (876 modules)
+ ✓ Compiled in 1095ms (876 modules)
+ ✓ Compiled in 519ms (876 modules)
+ ✓ Compiled in 503ms (876 modules)
+ ✓ Compiled in 616ms (876 modules)
+ ✓ Compiled in 507ms (876 modules)
+ ✓ Compiled in 564ms (876 modules)
+ ✓ Compiled in 631ms (876 modules)
+ ✓ Compiled in 673ms (876 modules)
+ ✓ Compiled in 616ms (876 modules)
+ ✓ Compiled in 668ms (876 modules)
+ ✓ Compiled in 615ms (876 modules)
+ ✓ Compiled in 704ms (876 modules)
+ ✓ Compiled in 618ms (876 modules)
+ ✓ Compiled in 520ms (876 modules)
+ ✓ Compiled in 592ms (876 modules)
+ ✓ Compiled in 544ms (876 modules)
+ ✓ Compiled in 899ms (876 modules)
+ ✓ Compiled in 787ms (876 modules)
+ ✓ Compiled in 1076ms (876 modules)
+ ✓ Compiled in 1030ms (876 modules)
+ ✓ Compiled in 525ms (876 modules)
+ ✓ Compiled in 684ms (876 modules)
+ ✓ Compiled in 901ms (876 modules)
+ ✓ Compiled in 680ms (876 modules)
+ ✓ Compiled in 848ms (876 modules)
+ ✓ Compiled in 621ms (876 modules)
+ ✓ Compiled in 572ms (876 modules)
+ ✓ Compiled in 551ms (876 modules)
+ ✓ Compiled in 559ms (876 modules)
+ ✓ Compiled in 599ms (876 modules)
+ ✓ Compiled in 587ms (876 modules)
+ ✓ Compiled in 690ms (876 modules)
+ ✓ Compiled in 715ms (876 modules)
+ ✓ Compiled in 609ms (876 modules)
+ ✓ Compiled in 620ms (876 modules)
+ ✓ Compiled in 826ms (876 modules)
+ ✓ Compiled in 1530ms (876 modules)
+ ✓ Compiled in 582ms (876 modules)
+ ✓ Compiled in 1023ms (876 modules)
+ ✓ Compiled in 5.1s (876 modules)
+ ✓ Compiled in 1260ms (876 modules)
+ ✓ Compiled in 1276ms (876 modules)
+ ✓ Compiled in 626ms (876 modules)
+ ✓ Compiled in 724ms (876 modules)
+ ✓ Compiled in 787ms (876 modules)
+ ✓ Compiled in 918ms (876 modules)
+ ✓ Compiled in 769ms (876 modules)
+ ✓ Compiled in 1023ms (876 modules)
+ ✓ Compiled in 1954ms (876 modules)
