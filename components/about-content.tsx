@@ -219,27 +219,25 @@ export function AboutContent() {
               <div className="relative z-10">
                 <div className="absolute -top-4 -left-4 text-6xl font-serif text-cyan-400/20">{'"'}</div>
                 <p className="text-xl md:text-2xl leading-relaxed text-white font-light" itemProp="description">
-                  I am a{" "}
+                  I'm a{" "}
                   <span className="text-cyan-300 font-semibold" itemProp="jobTitle">
-                    software engineer, application developer, Flutter developer, AI builder, and full-stack developer
+                    Flutter developer and AI experimenter
                   </span>{" "}
-                  building the future of AI-powered platforms and mobile applications.
+                  who loves turning complex ideas into simple, beautiful apps.
                 </p>
 
                 <div className="mt-6 h-px bg-gradient-to-r from-cyan-500/50 via-purple-500/20 to-transparent" />
 
                 <p className="mt-6 text-lg text-gray-300 leading-relaxed">
+                  I'm the{" "}
                   <span className="text-cyan-300 font-semibold">
-                    Founder of Nuvrexio
+                    founder of Nuvrexio
                   </span>
-                  , Founder of NovaFuze LLP, and Founder of MonoMode. I specialize in Flutter cross-platform development, Firebase backend systems, scalable cloud
-                  architectures, and LLM/generative AI integration.
+                  , where I build tools that help developers move faster. My journey has taken me from building sports coaching platforms with NovaFuze to exploring the boundaries of generative AI.
                 </p>
 
                 <p className="mt-4 text-gray-300 leading-relaxed">
-                  With 2+ years of hands-on development, I have built and launched 4+ production apps on Google Play
-                  Store, spanning e-commerce, sports coaching, grocery delivery, and AI-driven platforms serving
-                  thousands of users.
+                  I don't just write code; I build products. With 4+ apps live on the Play Store, I've learned that the best solutions come from understanding the person on the other side of the screen.
                 </p>
               </div>
             </motion.div>
@@ -253,18 +251,18 @@ export function AboutContent() {
             >
               {[
                 {
-                  title: "Vision",
-                  text: "Empowering developers worldwide with AI-powered tools that amplify creativity, accelerate development, and democratize access to cutting-edge technology.",
+                  title: "My Why",
+                  text: "I believe technology should feel like magic but work like a tool. I'm driven by the challenge of making AI accessible and building mobile experiences that actually stick.",
                   icon: Rocket,
                 },
                 {
-                  title: "Expertise",
-                  text: "Delivering elegant, scalable digital ecosystems through clean code, modern architecture, and innovative AI-driven design patterns across mobile and web platforms.",
+                  title: "How I Work",
+                  text: "Clean code is just the baseline. I focus on scalable architecture and thoughtful design patterns that allow products to grow without breaking.",
                   icon: Code2,
                 },
                 {
-                  title: "Impact",
-                  text: "Building production-grade applications and SaaS platforms that solve real-world problems and serve thousands of users across multiple industries.",
+                  title: "The Result",
+                  text: "From e-commerce to sports tech, I've built platforms that solve real problems for real people. If it doesn't make someone's life easier, I'm not finished.",
                   icon: Globe,
                 },
               ].map((item) => {

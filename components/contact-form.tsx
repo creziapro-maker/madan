@@ -1,60 +1,71 @@
 "use client"
 
-import type React from "react"
-
-import { useState, useRef } from "react"
+import { useState } from "react"
+import { useForm } from "react-hook-form"
+import { zodResolver } from "@hookform/resolvers/zod"
+import { z } from "zod"
 import { cn } from "@/lib/utils"
 import { Send, Mail, Linkedin, Github, Clock, CheckCircle, Phone, AlertCircle } from "lucide-react"
 import { sendContactEmail } from "@/app/actions/send-email"
 
+const contactFormSchema = z.object({
+  name: z.string().min(2, "Name must be at least 2 characters"),
+  email: z.string().email("Invalid email address"),
+  subject: z.string().min(5, "Subject must be at least 5 characters"),
+  message: z.string().min(10, "Message must be at least 10 characters"),
+})
+
+type ContactFormData = z.infer<typeof contactFormSchema>
+
 export function ContactForm() {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    subject: "",
-    message: "",
-  })
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [isSubmitted, setIsSubmitted] = useState(false)
-  const [error, setError] = useState<string | null>(null)
+  const [serverError, setServerError] = useState<string | null>(null)
   const [focusedField, setFocusedField] = useState<string | null>(null)
-  const formRef = useRef<HTMLFormElement>(null)
 
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault()
+  const {
+    register,
+    handleSubmit,
+    reset,
+    formState: { errors },
+  } = useForm<ContactFormData>({
+    resolver: zodResolver(contactFormSchema),
+    defaultValues: {
+      name: "",
+      email: "",
+      subject: "",
+      message: "",
+    },
+  })
+
+  const onSubmit = async (data: ContactFormData) => {
     setIsSubmitting(true)
-    setError(null)
+    setServerError(null)
 
     try {
-      const result = await sendContactEmail(formData)
+      const result = await sendContactEmail(data)
 
       if (result.success) {
         setIsSubmitted(true)
-        setFormData({ name: "", email: "", subject: "", message: "" })
-
-        setTimeout(() => {
-          setIsSubmitted(false)
-        }, 3000)
+        reset()
+        setTimeout(() => setIsSubmitted(false), 5000)
       } else {
-        setError(result.error || "Failed to send message. Please try again.")
+        setServerError(result.error || "Failed to send message. Please try again.")
       }
     } catch (err) {
-      setError(err instanceof Error ? err.message : "An unexpected error occurred")
+      setServerError(err instanceof Error ? err.message : "An unexpected error occurred")
     } finally {
       setIsSubmitting(false)
     }
   }
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    setFormData((prev) => ({ ...prev, [e.target.name]: e.target.value }))
-  }
-
-  const inputClasses = (field: string) =>
+  const inputClasses = (field: keyof ContactFormData) =>
     cn(
       "w-full px-6 py-4 rounded-xl bg-muted/30 border transition-all duration-300",
       "text-foreground placeholder:text-muted-foreground",
       "focus:outline-none",
       focusedField === field ? "border-primary bg-muted/50 shadow-[0_0_20px_rgba(0,212,255,0.15)]" : "border-border",
+      errors[field] ? "border-destructive/50" : "",
     )
 
   return (
@@ -68,9 +79,7 @@ export function ContactForm() {
               <p className="text-muted-foreground leading-relaxed">
                 Looking for an expert Flutter developer for your mobile app project? Need AI integration or custom
                 software development?
-                {
-                  "I'm available for freelance projects, consulting, and full-time opportunities. Let's discuss how I can help bring your ideas to life."
-                }
+                {"I'm available for freelance projects, consulting, and full-time opportunities. Let's discuss how I can help bring your ideas to life."}
               </p>
             </div>
 
@@ -149,7 +158,6 @@ export function ContactForm() {
               </ul>
             </div>
 
-            {/* Additional Info */}
             <div className="p-6 rounded-xl glass border border-border/50">
               <div className="flex items-center gap-3 mb-4">
                 <Clock className="w-5 h-5 text-primary" aria-hidden="true" />
@@ -184,56 +192,51 @@ export function ContactForm() {
                   <h3 className="text-2xl font-bold text-foreground mb-2">Message Sent!</h3>
                   <p className="text-muted-foreground">{"Thank you for reaching out. I'll get back to you soon."}</p>
                 </div>
-              ) : error ? (
+              ) : serverError ? (
                 <div className="flex flex-col items-center justify-center py-16 text-center">
                   <div className="w-20 h-20 rounded-full bg-destructive/20 flex items-center justify-center mb-6">
                     <AlertCircle className="w-10 h-10 text-destructive" />
                   </div>
                   <h3 className="text-2xl font-bold text-foreground mb-2">Oops!</h3>
-                  <p className="text-muted-foreground mb-6">{error}</p>
+                  <p className="text-muted-foreground mb-6">{serverError}</p>
                   <button
-                    onClick={() => setError(null)}
+                    onClick={() => setServerError(null)}
                     className="px-6 py-2 rounded-lg bg-primary text-primary-foreground hover:bg-primary/90 transition-colors"
                   >
                     Try Again
                   </button>
                 </div>
               ) : (
-                <form ref={formRef} onSubmit={handleSubmit} className="relative space-y-6">
+                <form onSubmit={handleSubmit(onSubmit)} className="relative space-y-6">
                   <div className="grid md:grid-cols-2 gap-6">
                     <div>
                       <label htmlFor="name" className="block text-sm font-medium text-muted-foreground mb-2">
                         Name
                       </label>
                       <input
-                        type="text"
+                        {...register("name")}
                         id="name"
-                        name="name"
-                        value={formData.name}
-                        onChange={handleChange}
                         onFocus={() => setFocusedField("name")}
                         onBlur={() => setFocusedField(null)}
                         className={inputClasses("name")}
                         placeholder="Your name"
-                        required
                       />
+                      {errors.name && <p className="mt-1 text-xs text-destructive">{errors.name.message}</p>}
                     </div>
                     <div>
                       <label htmlFor="email" className="block text-sm font-medium text-muted-foreground mb-2">
                         Email
                       </label>
                       <input
-                        type="email"
+                        {...register("email")}
                         id="email"
-                        name="email"
-                        value={formData.email}
-                        onChange={handleChange}
+                        type="email"
                         onFocus={() => setFocusedField("email")}
                         onBlur={() => setFocusedField(null)}
                         className={inputClasses("email")}
                         placeholder="your@email.com"
-                        required
                       />
+                      {errors.email && <p className="mt-1 text-xs text-destructive">{errors.email.message}</p>}
                     </div>
                   </div>
 
@@ -242,17 +245,14 @@ export function ContactForm() {
                       Subject
                     </label>
                     <input
-                      type="text"
+                      {...register("subject")}
                       id="subject"
-                      name="subject"
-                      value={formData.subject}
-                      onChange={handleChange}
                       onFocus={() => setFocusedField("subject")}
                       onBlur={() => setFocusedField(null)}
                       className={inputClasses("subject")}
                       placeholder="Project inquiry"
-                      required
                     />
+                    {errors.subject && <p className="mt-1 text-xs text-destructive">{errors.subject.message}</p>}
                   </div>
 
                   <div>
@@ -260,17 +260,15 @@ export function ContactForm() {
                       Message
                     </label>
                     <textarea
+                      {...register("message")}
                       id="message"
-                      name="message"
-                      value={formData.message}
-                      onChange={handleChange}
                       onFocus={() => setFocusedField("message")}
                       onBlur={() => setFocusedField(null)}
                       rows={5}
                       className={cn(inputClasses("message"), "resize-none")}
                       placeholder="Tell me about your project..."
-                      required
                     />
+                    {errors.message && <p className="mt-1 text-xs text-destructive">{errors.message.message}</p>}
                   </div>
 
                   <button

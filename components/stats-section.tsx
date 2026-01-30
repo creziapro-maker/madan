@@ -10,10 +10,10 @@ interface Stat {
 }
 
 const stats: Stat[] = [
-  { value: 4, label: "Applications Built", suffix: "" },
-  { value: 2, label: "Years Experience", suffix: "+" },
-  { value: 3, label: "Happy Clients", suffix: "+" },
-  { value: 100, label: "Code Quality", suffix: "%" },
+  { value: 4, label: "Apps in Production", suffix: "" },
+  { value: 2, label: "Years of Tinkering", suffix: "+" },
+  { value: 3, label: "Products Launched", suffix: "" },
+  { value: 1200, label: "Cups of Coffee", suffix: "+" },
 ]
 
 function CounterAnimation({ stat }: { stat: Stat }) {
@@ -89,11 +89,11 @@ export function StatsSection() {
         >
           <h2 className="text-4xl md:text-5xl font-bold tracking-tight mb-4">
             <span className="bg-gradient-to-r from-foreground via-primary to-foreground bg-clip-text text-transparent">
-              Impact By Numbers
+              A Few Quick Stats
             </span>
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto text-lg">
-            Delivering excellence through code, innovation, and dedication to creating transformative digital solutions
+            Beyond the code, it's about the journey and the small wins that lead to big results.
           </p>
         </motion.div>
 

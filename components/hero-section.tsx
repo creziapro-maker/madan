@@ -28,9 +28,21 @@ export function HeroSection() {
               isLoaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
             }`}
           >
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass border border-primary/30">
-              <Sparkles className="w-4 h-4 text-primary" />
-              <span className="text-sm text-muted-foreground">Building AI-Powered Flutter Apps & Developer Tools</span>
+            <div className="inline-flex flex-col items-center gap-3">
+              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass border border-primary/30">
+                <Sparkles className="w-4 h-4 text-primary" />
+                <span className="text-sm text-muted-foreground">Crafting seamless mobile experiences & exploring the future of AI</span>
+              </div>
+              <div className="flex flex-wrap items-center justify-center gap-3">
+                <div className="flex items-center gap-2 px-3 py-1 rounded-full bg-green-500/10 border border-green-500/20">
+                  <div className="w-2 h-2 rounded-full bg-green-500" />
+                  <span className="text-[10px] uppercase tracking-widest font-bold text-green-500">Shipped: Nuverio.online</span>
+                </div>
+                <div className="flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 animate-pulse">
+                  <div className="w-2 h-2 rounded-full bg-primary" />
+                  <span className="text-[10px] uppercase tracking-widest font-bold text-primary">Working on: ApplyPilotPro.com</span>
+                </div>
+              </div>
             </div>
           </div>
 
@@ -59,14 +71,14 @@ export function HeroSection() {
             }`}
           >
             <p className="text-xl md:text-2xl font-medium text-primary neon-text" itemProp="jobTitle">
-              Founder of Nuvrexio | Founder of NovaFuze LLP | Founder of MonoMode
+              Founder of Nuvrexio | Crafting NovaFuze & MonoMode
             </p>
             <p className="text-base text-muted-foreground/70 font-mono" itemProp="knowsAbout">
-              Software Engineer • Application Developer • Full Stack Engineer • AI/ML Systems Architect • Mobile App Specialist
+              Flutter Developer • AI Experimenter • Solution Architect • Problem Solver
             </p>
             <meta
               itemProp="description"
-              content="Madan Rajendra is a leading Flutter developer, AI engineer, and tech entrepreneur specializing in mobile app development, Firebase backend systems, and AI-powered code generation tools."
+              content="Madan Rajendra is a Flutter developer and AI engineer focused on building intuitive mobile apps and innovative developer tools."
             />
             <meta itemProp="url" content="https://madanrajendra.com" />
           </div>
@@ -77,17 +89,17 @@ export function HeroSection() {
               isLoaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
             }`}
           >
-            <Link href="/projects" aria-label="View Flutter and mobile app development portfolio">
+            <Link href="/projects" aria-label="View my projects and apps">
               <MagneticButton className="min-w-[200px]">
                 <span className="flex items-center gap-2">
-                  View App Portfolio
+                  See My Work
                   <ArrowRight className="w-4 h-4" />
                 </span>
               </MagneticButton>
             </Link>
-            <Link href="/contact" aria-label="Hire Madan Rajendra for Flutter development or AI projects">
+            <Link href="/contact" aria-label="Get in touch for collaboration">
               <MagneticButton className="min-w-[200px] bg-transparent border-muted-foreground/30 hover:border-primary/60">
-                Hire Me for Your Project
+                Let's Talk
               </MagneticButton>
             </Link>
           </div>
