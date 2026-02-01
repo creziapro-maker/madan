@@ -168,7 +168,7 @@ export function ProcessSection() {
                     {/* Outer glow ring */}
                     <motion.div
                       animate={{ rotate: 360 }}
-                      transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
+                      transition={{ duration: 20, repeat: Infinity, ease: [0, 0, 1, 1] }}
                       className="absolute -inset-2 rounded-full"
                       style={{
                         background: `conic-gradient(from 0deg, transparent, ${steps[index].glowColor}, transparent)`,

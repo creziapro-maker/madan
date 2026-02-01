@@ -12,7 +12,7 @@ export default function Hero() {
             y: [0, 30, 0],
             x: [0, 20, 0],
           }}
-          transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
+          transition={{ duration: 8, repeat: Infinity, ease: [0.42, 0, 0.58, 1] }}
         />
         <motion.div
           className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-gradient-to-tr from-cyan-600/20 via-transparent to-transparent rounded-full blur-3xl"
@@ -20,7 +20,7 @@ export default function Hero() {
             y: [0, -30, 0],
             x: [0, -20, 0],
           }}
-          transition={{ duration: 10, repeat: Infinity, ease: "easeInOut" }}
+          transition={{ duration: 10, repeat: Infinity, ease: [0.42, 0, 0.58, 1] }}
         />
       </div>
 

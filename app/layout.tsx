@@ -6,6 +6,7 @@ import "./globals.css"
 import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
 import { ThemeProvider } from "@/components/theme-provider"
+import { WhatsAppFAB } from "@/components/whatsapp-fab"
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" })
 const playfair = Playfair_Display({ subsets: ["latin"], variable: "--font-playfair" })
@@ -183,6 +184,7 @@ export default function RootLayout({
             {children}
           </main>
           <Footer />
+          <WhatsAppFAB />
           <Analytics />
         </ThemeProvider>
       </body>

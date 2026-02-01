@@ -227,7 +227,7 @@ export function FeaturedProjects() {
           <motion.div
             className="flex gap-6"
             animate={{ x: `calc(-${activeIndex * (100 / 3)}%)` }}
-            transition={{ duration: 0.8, ease: "easeInOut" }}
+            transition={{ duration: 0.8, ease: [0.42, 0, 0.58, 1] }}
           >
             {projects.map((project, index) => (
               <div

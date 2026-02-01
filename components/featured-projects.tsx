@@ -3,7 +3,7 @@
 import { useRef, useState, useEffect } from "react"
 import { cn } from "@/lib/utils"
 import { ExternalLink, ChevronLeft, ChevronRight } from "lucide-react"
-import { motion } from "framer-motion"
+import { motion, Variants, Transition } from "framer-motion"
 import Link from "next/link"
 
 const projects = [
@@ -139,6 +139,11 @@ const projects = [
   },
 ]
 
+const carouselTransition: Transition = {
+  duration: 0.8,
+  ease: [0.22, 1, 0.36, 1],
+}
+
 export function FeaturedProjects() {
   const containerRef = useRef<HTMLDivElement>(null)
   const [activeIndex, setActiveIndex] = useState(0)
@@ -227,7 +232,7 @@ export function FeaturedProjects() {
           <motion.div
             className="flex gap-6"
             animate={{ x: `calc(-${activeIndex * (100 / 3)}%)` }}
-            transition={{ duration: 0.8, ease: "easeInOut" }}
+            transition={carouselTransition}
           >
             {projects.map((project, index) => (
               <div

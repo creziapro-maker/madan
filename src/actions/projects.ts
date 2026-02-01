@@ -1,7 +1,7 @@
 "use server";
 
-import { adminDb } from "@/lib/firebase/admin";
-import { Project, AIStage } from "@/lib/types";
+import { adminDb } from "@/src/lib/firebase/admin";
+import { Project, AIStage } from "@/src/lib/types";
 import { auth } from "firebase-admin";
 import { cookies } from "next/headers";
 

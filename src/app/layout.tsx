@@ -5,6 +5,7 @@ import { Analytics } from "@vercel/analytics/next"
 import "./globals.css"
 import { ThemeProvider } from "@/components/theme-provider"
 import { AuthProvider } from "@/providers/auth-provider"
+import { WhatsAppFAB } from "@/components/whatsapp-fab"
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" })
 
@@ -33,6 +34,7 @@ export default function RootLayout({
               {children}
             </main>
             <Analytics />
+            <WhatsAppFAB />
           </AuthProvider>
         </ThemeProvider>
       </body>
